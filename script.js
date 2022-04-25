@@ -10,37 +10,37 @@ let songs = [
   {
     songName: "9th circle of heaven",
     filePath: "./Songs/1.mp3",
-    coverPath: "covers/1.jpg",
+    coverPath: "./covers/1.jpg",
   },
   {
     songName: "Tu dua hai",
     filePath: "./Songs/2.mp3",
-    coverPath: "covers/2.jpg",
+    coverPath: "./covers/2.jpg",
   },
   {
     songName: "Main hoon",
     filePath: "./Songs/3.mp3",
-    coverPath: "covers/3.jpg",
+    coverPath: "./covers/3.jpg",
   },
   {
     songName: "Love aaj kal",
     filePath: "./Songs/4.mp3",
-    coverPath: "covers/4.jpg",
+    coverPath: "./covers/4.jpg",
   },
   {
     songName: "The Bluff",
     filePath: "./Songs/5.mp3",
-    coverPath: "covers/5.jpg",
+    coverPath: "./covers/5.jpg",
   },
   {
     songName: "Hymn for the week",
     filePath: "./Songs/6.mp3",
-    coverPath: "covers/6.jpg",
+    coverPath: "./covers/6.jpg",
   },
   {
     songName: "Tu hi rey",
     filePath: "./Songs/7.mp3",
-    coverPath: "covers/7.jpg",
+    coverPath: "./covers/7.jpg",
   },
 ];
 
