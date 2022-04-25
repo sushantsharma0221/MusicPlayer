@@ -1,0 +1,296 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Varela+Round&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Roboto;
+  background-image: linear-gradient(
+    45deg,
+    rgba(81, 220, 255, 0.842),rgba(255, 181, 112, 0.815),rgba(250, 109, 250, 0.849),rgba(51, 255, 211, 0.87)
+  );
+  background-size: 200%;
+  animation: animate 3s infinite alternate;
+}
+@keyframes animate{
+  0%{
+    background-position: left;
+  }
+  100%{
+    background-position: right;
+  }
+}
+
+nav ul p {
+  margin-top: 1%;
+  margin-left: 1%;
+  font-size: larger;
+  transition: ease-in 0.7s;
+  background-image: linear-gradient(45deg,rgb(88, 208, 255),rgb(255, 83, 255),rgb(240, 255, 107),white);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-size: 1.4rem;
+  color: transparent;
+}
+nav ul p:hover,
+.fa-headphones {
+  transform: rotate(360deg);
+  cursor: pointer;
+  font-weight: bolder;
+font-size: 1.6rem;
+
+}
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  height: 8vh;
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.808),
+    rgb(161, 161, 161)
+  );
+  color: white;
+  font-family: "roboto", sans-serif;
+  font-weight: bolder;
+}
+nav ul li {
+  margin-left: 2%;
+  padding: 0 1%;
+  cursor: pointer;
+  transition: ease in 2s;
+}
+nav ul a {
+  text-decoration: none;
+  color: white;
+}
+nav ul a:hover {
+  color: rgba(196, 184, 184, 0.377);
+}
+nav ul li:hover {
+  color: rgb(143, 143, 143);
+}
+.searchBar {
+  margin-left: 17%;
+  width: 20%;
+  height: 2vh;
+  border: 2px solid rgb(180, 141, 32);
+  border-radius: 25px;
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.781);
+  outline: none;
+  color: rgb(0, 0, 0);
+  font-family: "roboto", sans-serif;
+  opacity: 86%;
+  padding: 20px;
+}
+.search {
+  margin-left: 1%;
+  width: 7%;
+  height: 58%;
+  border: 2px solid rgb(180, 141, 32);
+  border-radius: 6px;
+  background-color: aliceblue;
+  color: rgb(180, 141, 32);
+  font-family: "roboto", sans-serif;
+  font-weight: 600;
+  box-shadow: 3px 3px 8px rgba(99, 83, 11, 0.671);
+  transition: ease-in 0.3s;
+}
+.search:hover {
+  cursor: pointer;
+  background-color: rgb(209, 164, 42);
+  color: aliceblue;
+}
+.search2 {
+  margin-left: 1%;
+  width: 7%;
+  height: 58%;
+  border: 2px solid rgb(49, 126, 214);
+  border-radius: 6px;
+  background-color: rgb(255, 255, 255);
+  color: rgb(49, 126, 214);
+  font-family: "roboto", sans-serif;
+  font-weight: 600;
+  box-shadow: 3px 3px 8px rgba(12, 42, 66, 0.671);
+  transition: ease-in 0.3s;
+}
+.search2:hover {
+  cursor: pointer;
+  background-color: rgb(49, 126, 214);
+  color: rgb(255, 255, 255);
+}
+.container {
+  height: 70vh;
+  color: white;
+  font-family: "roboto", sans-serif;
+  display: flex;
+  margin: 2% auto;
+  width: 90%;
+  border-radius: 18px;
+  padding: 2%;
+  background-image: url("./headphones.jpg");
+  background-size: cover;
+  box-shadow: 6px 8px 18px black;
+}
+
+.bottom {
+  position: sticky;
+  bottom: 0;
+  height: 13.7vh;
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(161, 161, 161));
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: roboto;
+}
+.icons {
+  margin-top: 1%;
+}
+.icons i {
+  cursor: pointer;
+}
+
+#myProgressBar {
+  width: 80vw;
+  cursor: pointer;
+}
+
+.songItemContainer {
+  margin-top: 6%;
+}
+
+.songItem {
+  height: 6vh;
+  display: flex;
+  width: 30vw;
+  border: 1.5px solid rgb(240, 248, 255);
+  background-color: rgba(247, 237, 237, 0.842);
+  color: rgb(0, 0, 0);
+  margin: 2.1% 0;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 25px;
+  box-shadow: 10px 10px 15px black;
+  font-family: ubuntu;
+  transition: ease-in 0.3s;
+}
+
+.songItem img {
+  width: 3vw;
+  margin: 0 2%;
+  border-radius: 34px;
+}
+.songItem:hover {
+  background-color: rgb(167, 172, 177);
+  cursor: pointer;
+}
+.timestamp {
+  margin: 0 1%;
+}
+
+.timestamp i {
+  cursor: pointer;
+}
+
+.songInfo {
+  position: absolute;
+  left: 10vw;
+  font-family: "Varela Round", sans-serif;
+}
+
+.songInfo img {
+  opacity: 0;
+  transition: opacity 0.4s ease-in;
+}
+.form {
+  height: 50vh;
+  width: 70vw;
+  margin-left: 14vw;
+}
+
+.mainContainer {
+  background-image: url("./image3.jpg");
+  background-size:100%;
+  color: rgb(255, 255, 255);
+  height: 75vh;
+  font-family: Roboto, sans-serif;
+  overflow-y: hidden;
+  padding: 1vh;
+  margin: 8vh 8vh;
+  border-radius: 18px;
+  box-shadow: 6px 8px 18px black;
+}
+.margin-left {
+  margin-left: 14vw;
+  margin-bottom: 3vh;
+}
+
+@media (max-width: 1000px) {
+  .container {
+    height: 60vh;
+    width: 35vw;
+  }
+  nav ul p {
+    margin-top: 2%;
+    margin-left: 1%;
+    font-size: larger;
+  }
+  .bottom {
+    height: 27vh;
+  }
+  .songItem {
+    height: 5vh;
+  }
+}
+@media (max-width: 875px) {
+  .search,
+  .searchBar {
+    display: none;
+  }
+  .search2 {
+    height: 6vh;
+  }
+}
+
+@media (max-width: 735px) {
+  .songItem {
+    height: 6vh;
+    width: 40vw;
+  }
+}
+@media (max-width: 560px) {
+  .bottom {
+    height: 30vh;
+  }
+  .container {
+    height: 60vh;
+    width: 25vw;
+  }
+}
+@media (max-width: 480px) {
+  nav ul p {
+    margin-top: 19px;
+    margin-left: 1%;
+    font-size: larger;
+  }
+  .container {
+    height: 60vh;
+    width: 25vw;
+    margin: 10%;
+  }
+
+  .bottom {
+    display: flex;
+    justify-content: center;
+  }
+  .songInfo {
+    position: absolute;
+    left: 1vw;
+  }
+}
