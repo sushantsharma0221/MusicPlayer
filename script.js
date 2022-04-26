@@ -9,7 +9,7 @@ let songItems = Array.from(document.getElementsByClassName("songItem"));
 let songs = [
   {
     songName: "9th circle of heaven",
-    filePath: "./Songs/1.mp3",
+    filePath: "https://pikbest.com/music/?spm=hongkiat",
     coverPath: "./covers/1.jpg",
   },
   {
