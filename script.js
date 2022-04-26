@@ -1,5 +1,5 @@
 let songIndex = 0;
-let audioElement = new Audio("./Songs/1.mp3");
+let audioElement = new Audio("https://pikbest.com/music/?spm=hongkiat");
 let masterPlay = document.getElementById("masterPlay");
 let myProgressBar = document.getElementById("myProgressBar");
 let gif = document.getElementById("gif");
